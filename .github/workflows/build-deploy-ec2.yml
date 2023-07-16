@@ -3,7 +3,7 @@ name: Build  & EC2 Deploy
 on:
   push:
     branches:
-      - main
+      - main 
 
 env:
           CI: false
@@ -37,5 +37,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: "/home/ubuntu/testDeployReact"
+          TARGET: "/home/ubuntu/testDeployReactContacts"
           SOURCE: "./build"
